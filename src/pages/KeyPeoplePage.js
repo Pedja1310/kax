@@ -1,37 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollDown from "../components/ScrollDown";
 
 const KeyPeoplePage = () => {
   return (
     <>
-      <main class="pr-90 key-people-page">
-        <section class="page-submenu-section">
-          <div class="container page-submenu-container">
-            <div class="row page-submenu-content">
-              <div class="col-12 page-submenu-items">
+      <main className="pr-90 key-people-page">
+        <section className="page-submenu-section">
+          <div className="container page-submenu-container">
+            <div className="row page-submenu-content">
+              <div className="col-12 page-submenu-items">
                 <Link
-                  class="page-submenu-item wow fadeIn"
+                  className="page-submenu-item wow fadeIn"
                   data-wow-delay="1.3s"
                   to="/"
                 >
                   KAX World /
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.4s"
                   to="/about-us"
                 >
                   About us
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.5s"
                   to="/kyle"
                 >
                   Kyle Seltzer
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline active wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline active wow fadeIn"
                   data-wow-delay="1.6s"
                   to="/key-people"
                 >
@@ -42,28 +43,28 @@ const KeyPeoplePage = () => {
           </div>
         </section>
         <section
-          class="main-content-section wow fadeIn"
+          className="main-content-section wow fadeIn"
           data-wow-delay="1.5s"
           data-wow-duration="1s"
         >
-          <div class="container heading-container">
-            <div class="row heading-content">
-              <div class="col-12 heading-content-item">
-                <div class="heading-holder mb-100">
-                  <h1 class="txt-underline">Key People</h1>
+          <div className="container heading-container">
+            <div className="row heading-content">
+              <div className="col-12 heading-content-item">
+                <div className="heading-holder mb-100">
+                  <h1 className="txt-underline">Key People</h1>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container-fluid hero-container mb-90">
-            <div class="row hero-content">
-              <div class="col-12 hero-content-item p-0">
-                <div class="img-placeholder-container wow">
-                  <div class="full-bg main-bg"></div>
+          <div className="container-fluid hero-container mb-90">
+            <div className="row hero-content">
+              <div className="col-12 hero-content-item p-0">
+                <div className="img-placeholder-container wow">
+                  <div className="full-bg main-bg"></div>
                   <img
                     src="images/key-people-main-img.jpg"
                     alt="Key People"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
@@ -71,12 +72,12 @@ const KeyPeoplePage = () => {
           </div>
         </section>
 
-        <section class="txt-img-section key-people">
-          <div class="container-fluid txt-img-container">
-            <div class="row txt-img-content">
-              <div class="col-7 txt-content second-bg-color">
-                <div class="txt-content-wrap wow fadeIn">
-                  <div class="heading-content">
+        <section className="txt-img-section key-people">
+          <div className="container-fluid txt-img-container">
+            <div className="row txt-img-content">
+              <div className="col-7 txt-content second-bg-color">
+                <div className="txt-content-wrap wow fadeIn">
+                  <div className="heading-content">
                     <h4>
                       Curabitur est nisi, pellentesque eu augue vitae, aliquam
                       consequat elit.
@@ -107,57 +108,57 @@ const KeyPeoplePage = () => {
           </div>
         </section>
 
-        <section class="slider-section key-people-slider ml--90 wow fadeIn">
-          <div class="container-fluid slider-container">
-            <div class="row slider-content">
-              <div class="col-12 slider-item p-0">
-                <div class="swiper key-people-slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="img-holder">
+        <section className="slider-section key-people-slider ml--90 wow fadeIn">
+          <div className="container-fluid slider-container">
+            <div className="row slider-content">
+              <div className="col-12 slider-item p-0">
+                <div className="swiper key-people-slider">
+                  <div className="swiper-wrapper">
+                    <div className="swiper-slide">
+                      <div className="img-holder">
                         <img
                           src="images/key-people-slider-img-01.jpg"
                           alt="Key People"
-                          class="img-fluid"
+                          className="img-fluid"
                         />
                       </div>
-                      <div class="txt-holder">
-                        <h3 class="txt-underline">Daniela Ratner</h3>
+                      <div className="txt-holder">
+                        <h3 className="txt-underline">Daniela Ratner</h3>
                         <h4>Travel Agent</h4>
                         <p>Americas, Familiy Travel, Food & Wine</p>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="img-holder">
+                    <div className="swiper-slide">
+                      <div className="img-holder">
                         <img
                           src="images/key-people-slider-img-02.jpg"
                           alt="Key People"
-                          class="img-fluid"
+                          className="img-fluid"
                         />
                       </div>
-                      <div class="txt-holder">
-                        <h3 class="txt-underline">Daniela Ratner5</h3>
+                      <div className="txt-holder">
+                        <h3 className="txt-underline">Daniela Ratner5</h3>
                         <h4>Travel Agent</h4>
                         <p>Americas, Familiy Travel, Food & Wine</p>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="img-holder">
+                    <div className="swiper-slide">
+                      <div className="img-holder">
                         <img
                           src="images/key-people-slider-img-03.jpg"
                           alt="Key People"
-                          class="img-fluid"
+                          className="img-fluid"
                         />
                       </div>
-                      <div class="txt-holder">
-                        <h3 class="txt-underline">Daniela Ratner6</h3>
+                      <div className="txt-holder">
+                        <h3 className="txt-underline">Daniela Ratner6</h3>
                         <h4>Travel Agent</h4>
                         <p>Americas, Familiy Travel, Food & Wine</p>
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
+                  <div className="swiper-button-next"></div>
+                  <div className="swiper-button-prev"></div>
                 </div>
               </div>
             </div>
@@ -165,14 +166,7 @@ const KeyPeoplePage = () => {
         </section>
       </main>
 
-      <div class="scroll-down-container">
-        <span>Scroll down</span>
-        <img
-          src="images/scroll-down-icon.png"
-          alt="Scroll down"
-          class="img-fluid"
-        />
-      </div>
+      <ScrollDown />
     </>
   );
 };

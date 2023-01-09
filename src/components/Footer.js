@@ -1,120 +1,129 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer class="footer-section">
-      <div class="container-fluid footer-container wow fadeIn">
-        <div class="row footer-content">
-          <div class="col footer-content-item footer-social-content mw-600">
-            <div class="heading-holder">
+    <footer className="footer-section">
+      <div className="container-fluid footer-container wow fadeIn">
+        <div className="row footer-content">
+          <div className="col footer-content-item footer-social-content mw-600">
+            <div className="heading-holder">
               <h3>Follow us:</h3>
             </div>
-            <div class="links-holder">
-              <a target="_blank" href="javascript:;" class="txt-underline">
+            <div className="links-holder">
+              <Link target="_blank" className="txt-underline">
                 Instagram
-              </a>
-              <a target="_blank" href="javascript:;" class="txt-underline">
+              </Link>
+              <Link target="_blank" className="txt-underline">
                 LinkedIn
-              </a>
-              <a target="_blank" href="javascript:;" class="txt-underline">
+              </Link>
+              <Link target="_blank" className="txt-underline">
                 YouTube
-              </a>
+              </Link>
             </div>
-            <div class="logo-holder">
-              <a href="/">
-                <img src="images/footer-logo.png" alt="KAX" class="img-fluid" />
-              </a>
+            <div className="logo-holder">
+              <Link to="/">
+                <img
+                  src="images/footer-logo.png"
+                  alt="KAX"
+                  className="img-fluid"
+                />
+              </Link>
               <p>© 2022 KAX Holding LLC.</p>
               <p>All Rights Reserved.</p>
             </div>
           </div>
-          <div class="col footer-content-item footer-newsletter-content">
-            <div class="heading-holder">
-              <h3 class="txt-underline">Get more travel inspiration</h3>
+          <div className="col footer-content-item footer-newsletter-content">
+            <div className="heading-holder">
+              <h3 className="txt-underline">Get more travel inspiration</h3>
             </div>
-            <div class="txt-holder">
-              <p class="mw-290 text-align-justify">
+            <div className="txt-holder">
+              <p className="mw-290 text-align-justify">
                 Join our newsletter for insirational contents about magical
                 location and possibilites around the world.
               </p>
-              <div class="newsletter-holder">
+              <div className="newsletter-holder">
                 <form
                   action="javascript;;"
                   method="post"
-                  class="newsletter-form"
+                  className="newsletter-form"
                   id="newsletter_form"
                 >
                   <input
                     type="text"
-                    class="custom-input"
+                    className="custom-input"
                     name="email"
                     placeholder="Enter email address"
                   />
-                  <button class="btn hover-underline" type="submit">
+                  <button className="btn hover-underline" type="submit">
                     Join
                   </button>
                 </form>
               </div>
             </div>
-            <div class="row links-holder">
-              <ul class="col-3">
+            <div className="row links-holder">
+              <ul className="col-3">
                 <li>
                   <h3>
-                    <a class="hover-underline" href="about-us.php">
+                    <Link className="hover-underline" to="/about-us">
                       KAX World
-                    </a>
+                    </Link>
                   </h3>
                 </li>
                 <li>
-                  <a class="hover-underline" href="default-page.php">
+                  <Link className="hover-underline" to="/default-page">
                     Terms of use
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="hover-underline" href="default-page.php">
+                  <Link className="hover-underline" to="/default-page">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <ul class="col-3">
+              <ul className="col-3">
                 <li>
                   <h3>
-                    <a class="hover-underline" href="endorsement.php">
+                    <Link className="hover-underline" to="/endorsment">
                       Endorsement
-                    </a>
+                    </Link>
                   </h3>
                 </li>
                 <li>
-                  <a class="hover-underline" href="default-page.php">
+                  <Link className="hover-underline" to="/default-page">
                     Cookies
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a class="hover-underline" href="default-page.php">
+                  <Link className="hover-underline" to="/default-page">
                     Cancellation policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <ul class="col-3">
+              <ul className="col-3">
                 <li>
                   <h3>
-                    <a class="hover-underline" href="start-a-journey.php">
-                      Start a Journey
-                    </a>
+                    <Link
+                      Link
+                      className="hover-underline"
+                      to="/start-a-journey"
+                    >
+                      Start A Journey
+                    </Link>
                   </h3>
                 </li>
                 <li>
-                  <a class="hover-underline" href="contact-us.php">
+                  <Link className="hover-underline" to="/contact-us">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
-              <ul class="col-3">
+              <ul className="col-3">
                 <li>
                   <h3>
-                    <a class="hover-underline" href="news-group.php">
+                    <Link className="hover-underline" to="/news-group">
                       Diary
-                    </a>
+                    </Link>
                   </h3>
                 </li>
               </ul>

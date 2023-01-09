@@ -1,37 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollDown from "../components/ScrollDown";
 
 const KylePage = () => {
   return (
     <>
-      <main class="pr-90 kyle-page">
-        <section class="page-submenu-section">
-          <div class="container page-submenu-container">
-            <div class="row page-submenu-content">
-              <div class="col-12 page-submenu-items">
+      <main className="pr-90 kyle-page">
+        <section className="page-submenu-section">
+          <div className="container page-submenu-container">
+            <div className="row page-submenu-content">
+              <div className="col-12 page-submenu-items">
                 <Link
-                  class="page-submenu-item wow fadeIn"
+                  className="page-submenu-item wow fadeIn"
                   data-wow-delay="1.3s"
                   to="/"
                 >
                   KAX World /
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.4s"
                   to="/about-us"
                 >
                   About us
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline active wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline active wow fadeIn"
                   data-wow-delay="1.5s"
                   to="/kyle"
                 >
                   Kyle Seltzer
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.6s"
                   to="/key-people"
                 >
@@ -42,15 +43,15 @@ const KylePage = () => {
           </div>
         </section>
         <section
-          class="main-content-section wow fadeIn"
+          className="main-content-section wow fadeIn"
           data-wow-delay="1.5s"
           data-wow-duration="1s"
         >
-          <div class="container heading-container">
-            <div class="row heading-content">
-              <div class="col-12 heading-content-item">
-                <div class="heading-holder mb-100">
-                  <h1 class="txt-underline">
+          <div className="container heading-container">
+            <div className="row heading-content">
+              <div className="col-12 heading-content-item">
+                <div className="heading-holder mb-100">
+                  <h1 className="txt-underline">
                     Kyle Seltzer - Journeys
                     <br /> embodied in full-color
                   </h1>
@@ -58,23 +59,23 @@ const KylePage = () => {
               </div>
             </div>
           </div>
-          <div class="container-fluid hero-container mb-90">
-            <div class="row hero-content">
-              <div class="col-12 hero-content-item p-0">
-                <div class="img-placeholder-container wow">
-                  <div class="full-bg main-bg"></div>
+          <div className="container-fluid hero-container mb-90">
+            <div className="row hero-content">
+              <div className="col-12 hero-content-item p-0">
+                <div className="img-placeholder-container wow">
+                  <div className="full-bg main-bg"></div>
                   <img
                     src="images/kyle-main-img.jpg"
                     alt="Kyle"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div class="container txt-editor-container mb-200 wow fadeIn">
-            <div class="row txt-editor-content">
-              <div class="col-12 txt-editor-item mw-600 m-auto align-justify">
+          <div className="container txt-editor-container mb-200 wow fadeIn">
+            <div className="row txt-editor-content">
+              <div className="col-12 txt-editor-item mw-600 m-auto align-justify">
                 <p>
                   From the beginning, and only using a white canvass with which
                   to depict the journey and destination, Kyle and his customer,
@@ -97,8 +98,8 @@ const KylePage = () => {
                   to travel, he has observed and experienced many of the most
                   amazing holiday destinations across the globe; an Instinctive
                   wish to savor luxurious destinations set in natural
-                  surroundings while enjoying first-class facilities, activities
-                  and cuisine.
+                  surroundings while enjoying first-className facilities,
+                  activities and cuisine.
                 </p>
                 <p>
                   There are many elements that make up a truly memorable
@@ -115,12 +116,12 @@ const KylePage = () => {
           </div>
         </section>
 
-        <section class="txt-img-section manifesto">
-          <div class="container-fluid txt-img-container">
-            <div class="row txt-img-content">
-              <div class="col-12 txt-content">
-                <div class="txt-content-wrap wow fadeIn">
-                  <div class="heading-content">
+        <section className="txt-img-section manifesto">
+          <div className="container-fluid txt-img-container">
+            <div className="row txt-img-content">
+              <div className="col-12 txt-content">
+                <div className="txt-content-wrap wow fadeIn">
+                  <div className="heading-content">
                     <h2>Kyle’s Manifesto</h2>
                   </div>
                   <p>
@@ -146,8 +147,8 @@ const KylePage = () => {
                     to travel, he has observed and experienced many of the most
                     amazing holiday destinations across the globe; an
                     Instinctive wish to savor luxurious destinations set in
-                    natural surroundings while enjoying first-class facilities,
-                    activities and cuisine.
+                    natural surroundings while enjoying first-className
+                    facilities, activities and cuisine.
                   </p>
                   <p>
                     There are many elements that make up a truly memorable
@@ -160,13 +161,13 @@ const KylePage = () => {
                     parts.
                   </p>
                 </div>
-                <div class="img-holder">
-                  <div class="img-placeholder-container wow">
-                    <div class="full-bg main-bg"></div>
+                <div className="img-holder">
+                  <div className="img-placeholder-container wow">
+                    <div className="full-bg main-bg"></div>
                     <img
                       src="images/kyle-manifesto-main-img.jpg"
                       alt="Kyle’s Manifesto"
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
                 </div>
@@ -176,14 +177,7 @@ const KylePage = () => {
         </section>
       </main>
 
-      <div class="scroll-down-container">
-        <span>Scroll down</span>
-        <img
-          src="images/scroll-down-icon.png"
-          alt="Scroll down"
-          class="img-fluid"
-        />
-      </div>
+      <ScrollDown />
     </>
   );
 };

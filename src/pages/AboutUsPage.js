@@ -1,37 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollDown from "../components/ScrollDown";
 
 const AboutUsPage = () => {
   return (
     <>
-      <main class="pr-90 about-us-page">
-        <section class="page-submenu-section">
-          <div class="container page-submenu-container">
-            <div class="row page-submenu-content">
-              <div class="col-12 page-submenu-items">
+      <main className="pr-90 about-us-page">
+        <section className="page-submenu-section">
+          <div className="container page-submenu-container">
+            <div className="row page-submenu-content">
+              <div className="col-12 page-submenu-items">
                 <Link
-                  class="page-submenu-item wow fadeIn"
+                  className="page-submenu-item wow fadeIn"
                   data-wow-delay="1.3s"
                   to="/"
                 >
                   KAX World /
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline active wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline active wow fadeIn"
                   data-wow-delay="1.4s"
                   to="/about-us"
                 >
                   About us
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.5s"
                   to="/kyle"
                 >
                   Kyle Seltzer
                 </Link>
                 <Link
-                  class="page-submenu-item transition-page hover-underline wow fadeIn"
+                  className="page-submenu-item transition-page hover-underline wow fadeIn"
                   data-wow-delay="1.6s"
                   to="/key-people"
                 >
@@ -42,36 +43,36 @@ const AboutUsPage = () => {
           </div>
         </section>
         <section
-          class="main-content-section wow fadeIn"
+          className="main-content-section wow fadeIn"
           data-wow-delay="1.5s"
           data-wow-duration="1s"
         >
-          <div class="container heading-container">
-            <div class="row heading-content">
-              <div class="col-12 heading-content-item">
-                <div class="heading-holder mb-100">
-                  <h1 class="txt-underline">Enjoy. Explore. Experience.</h1>
+          <div className="container heading-container">
+            <div className="row heading-content">
+              <div className="col-12 heading-content-item">
+                <div className="heading-holder mb-100">
+                  <h1 className="txt-underline">Enjoy. Explore. Experience.</h1>
                 </div>
               </div>
             </div>
           </div>
-          <div class="container-fluid hero-container mb-90">
-            <div class="row hero-content">
-              <div class="col-12 hero-content-item p-0">
-                <div class="img-placeholder-container wow">
-                  <div class="full-bg main-bg"></div>
+          <div className="container-fluid hero-container mb-90">
+            <div className="row hero-content">
+              <div className="col-12 hero-content-item p-0">
+                <div className="img-placeholder-container wow">
+                  <div className="full-bg main-bg"></div>
                   <img
                     src="images/about-us-main-img.jpg"
                     alt="About Us"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div class="container txt-editor-container mb-70 wow fadeIn">
-            <div class="row txt-editor-content">
-              <div class="col-12 txt-editor-item mw-600 m-auto align-justify">
+          <div className="container txt-editor-container mb-70 wow fadeIn">
+            <div className="row txt-editor-content">
+              <div className="col-12 txt-editor-item mw-600 m-auto align-justify">
                 <p>
                   We like to see every vacation from the viewpoint of the
                   client. Creating a bespoke experience that matches the
@@ -85,7 +86,7 @@ const AboutUsPage = () => {
                   yet it’s more than a holiday, it’s a journey. A journey to
                   enjoy, explore and experience. And as each client is
                   different, with different wishes,{" "}
-                  <a href="javascript:;">each journey</a> is customized.{" "}
+                  <Link to="#">each journey</Link> is customized.{" "}
                 </p>
                 <p>
                   As we plan the details, the travel arrangements, the
@@ -129,14 +130,14 @@ const AboutUsPage = () => {
           </div>
         </section>
 
-        <section class="txt-img-section vision">
-          <div class="container-fluid txt-img-container">
-            <div class="row txt-img-content">
-              <div class="col-8 txt-content second-bg-color">
-                <div class="txt-content-wrap wow fadeIn">
-                  <div class="heading-content">
-                    <div class="heading-holder mb-60">
-                      <h2 class="txt-underline">Vision The Scenario</h2>
+        <section className="txt-img-section vision">
+          <div className="container-fluid txt-img-container">
+            <div className="row txt-img-content">
+              <div className="col-8 txt-content second-bg-color">
+                <div className="txt-content-wrap wow fadeIn">
+                  <div className="heading-content">
+                    <div className="heading-holder mb-60">
+                      <h2 className="txt-underline">Vision The Scenario</h2>
                     </div>
                     <h4>
                       Create a scenario drawn from all that our world offers;
@@ -170,13 +171,13 @@ const AboutUsPage = () => {
                     accommodate the traveler’s taste
                   </p>
                 </div>
-                <div class="img-holder">
-                  <div class="img-placeholder-container wow">
-                    <div class="full-bg main-bg"></div>
+                <div className="img-holder">
+                  <div className="img-placeholder-container wow">
+                    <div className="full-bg main-bg"></div>
                     <img
                       src="images/vision-section-main-img.jpg"
                       alt="Vision"
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
                 </div>
@@ -185,14 +186,8 @@ const AboutUsPage = () => {
           </div>
         </section>
       </main>
-      <div class="scroll-down-container">
-        <span>Scroll down</span>
-        <img
-          src="images/scroll-down-icon.png"
-          alt="Scroll down"
-          class="img-fluid"
-        />
-      </div>
+
+      <ScrollDown />
     </>
   );
 };

@@ -1,20 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollDown from "../components/ScrollDown";
 
 const LandingPage = () => {
   return (
     <>
-      <main class="pr-90 index-page">
+      <main className="pr-90 index-page">
         <section
-          class="main-content-section wow fadeIn"
+          className="main-content-section wow fadeIn"
           data-wow-delay="1.5s"
           data-wow-duration="1s"
         >
-          <div class="container heading-container">
-            <div class="row heading-content">
-              <div class="col-12 heading-content-item">
-                <div class="heading-holder mb-100">
-                  <h1 class="txt-underline">
+          <div className="container heading-container">
+            <div className="row heading-content">
+              <div className="col-12 heading-content-item">
+                <div className="heading-holder mb-100">
+                  <h1 className="txt-underline">
                     If time be of all things the most precious, wasting time
                     must be the greatest prodigality.
                   </h1>
@@ -23,15 +24,15 @@ const LandingPage = () => {
               </div>
             </div>
           </div>
-          <div class="container-fluid hero-container">
-            <div class="row hero-content">
-              <div class="col-12 hero-content-item p-0">
-                <div class="img-placeholder-container wow">
-                  <div class="full-bg main-bg"></div>
+          <div className="container-fluid hero-container">
+            <div className="row hero-content">
+              <div className="col-12 hero-content-item p-0">
+                <div className="img-placeholder-container wow">
+                  <div className="full-bg main-bg"></div>
                   <img
                     src="images/index-main-img.jpg"
                     alt="KAX"
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
               </div>
@@ -39,36 +40,36 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <section class="txt-img-section kax-lifestyle mb-200">
-          <div class="container txt-img-container">
-            <div class="row txt-img-content">
-              <div class="col-12 txt-content">
-                <div class="img-holder order-md-2">
-                  <div class="img-placeholder-container wow">
-                    <div class="full-bg main-bg"></div>
+        <section className="txt-img-section kax-lifestyle mb-200">
+          <div className="container txt-img-container">
+            <div className="row txt-img-content">
+              <div className="col-12 txt-content">
+                <div className="img-holder order-md-2">
+                  <div className="img-placeholder-container ">
+                    <div className="full-bg main-bg"></div>
                     <img
                       src="images/index-kax-life-style-img.jpg"
                       alt="What is KAX Lifestyle?"
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
                 </div>
-                <div class="txt-content-wrap wow fadeIn">
-                  <div class="heading-content">
-                    <h2 class="txt-underline">What is KAX Lifestyle?</h2>
+                <div className="txt-content-wrap">
+                  <div className="heading-content">
+                    <h2 className="txt-underline">What is KAX Lifestyle?</h2>
                   </div>
                   <p>
                     Sed mollis rhoncus facilisis. Ut at mauris vel tellus
                     molestie condimentum ac non ipsum. Suspendisse pretium
                     ultricies orci id commodo.
                   </p>
-                  <div class="link-holder">
-                    <Link to="/about-us" class="hover-underline">
+                  <div className="link-holder">
+                    <Link to="/about-us" className="hover-underline">
                       <span>Read more</span>
                       <img
                         src="images/explore-arrow-icon.png"
                         alt="Kax Lifestyle"
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </Link>
                   </div>
@@ -78,20 +79,20 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <section class="big-img-txt-section mb-200">
-          <div class="container w-1400 big-img-txt-container mr-0">
-            <div class="row big-img-txt-content">
-              <div class="col-12 big-img-txt-item">
-                <div class="img-holder wow fadeIn">
+        <section className="big-img-txt-section mb-200">
+          <div className="container w-1400 big-img-txt-container mr-0">
+            <div className="row big-img-txt-content">
+              <div className="col-12 big-img-txt-item">
+                <div className="img-holder wow fadeIn">
                   <img
                     src="images/index-kyle-maestro-img.jpg"
                     alt=""
-                    class="img-fluid"
+                    className="img-fluid"
                   />
                 </div>
-                <div class="txt-holder wow fadeIn" data-wow-delay=".5s">
-                  <div class="heading-holder">
-                    <h3 class="txt-underline">
+                <div className="txt-holder wow fadeIn" data-wow-delay=".5s">
+                  <div className="heading-holder">
+                    <h3 className="txt-underline">
                       Kyle Seltzer <br />
                       Manifesto
                     </h3>
@@ -102,13 +103,13 @@ const LandingPage = () => {
                     culture and character - elements that go to create a
                     complete experience.
                   </p>
-                  <div class="link-holder">
-                    <Link to="/kyle" class="hover-underline">
+                  <div className="link-holder">
+                    <Link to="/kyle" className="hover-underline">
                       <span>Read more</span>
                       <img
                         src="images/explore-arrow-icon.png"
                         alt="Kax Lifestyle"
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </Link>
                   </div>
@@ -118,30 +119,30 @@ const LandingPage = () => {
           </div>
         </section>
 
-        <section class="news-group-section pl-90">
-          <div class="container w-1400">
-            <div class="row news-group-content">
-              <div class="heading-holder mb-70">
-                <h2 class="txt-underline wow fadeIn">
+        <section className="news-group-section pl-90">
+          <div className="container w-1400">
+            <div className="row news-group-content">
+              <div className="heading-holder mb-70">
+                <h2 className="txt-underline wow fadeIn">
                   Latest <br />
                   diary notes
                 </h2>
               </div>
             </div>
           </div>
-          <div class="container news-group-container">
-            <div class="row news-group-content grid mb-50">
-              <div class="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" class="news-group-item">
-                  <div class="img-holder">
-                    <div class="hover-content">
-                      <div class="link-holder">
-                        <div class="link-btn hover-underline">
+          <div className="container news-group-container">
+            <div className="row news-group-content grid mb-50">
+              <div className="col-6 grid-item wow fadeIn">
+                <a href="news-full.php" className="news-group-item">
+                  <div className="img-holder">
+                    <div className="hover-content">
+                      <div className="link-holder">
+                        <div className="link-btn hover-underline">
                           <span>Read article</span>
                           <img
                             src="images/explore-arrow-main-color-icon.png"
                             alt="Kax diary"
-                            class="img-fluid"
+                            className="img-fluid"
                           />
                         </div>
                       </div>
@@ -149,10 +150,10 @@ const LandingPage = () => {
                     <img
                       src="images/index-blog-full-img-01.jpg"
                       alt=""
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
-                  <div class="txt-content">
+                  <div className="txt-content">
                     <h4>Destinations</h4>
                     <h3>
                       Islas Secas: <br />A Transcendent Destination
@@ -160,17 +161,17 @@ const LandingPage = () => {
                   </div>
                 </a>
               </div>
-              <div class="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" class="news-group-item">
-                  <div class="img-holder">
-                    <div class="hover-content">
-                      <div class="link-holder">
-                        <div class="link-btn hover-underline">
+              <div className="col-6 grid-item wow fadeIn">
+                <a href="news-full.php" className="news-group-item">
+                  <div className="img-holder">
+                    <div className="hover-content">
+                      <div className="link-holder">
+                        <div className="link-btn hover-underline">
                           <span>Read article</span>
                           <img
                             src="images/explore-arrow-main-color-icon.png"
                             alt="Kax diary"
-                            class="img-fluid"
+                            className="img-fluid"
                           />
                         </div>
                       </div>
@@ -178,10 +179,10 @@ const LandingPage = () => {
                     <img
                       src="images/index-blog-full-img-02.jpg"
                       alt=""
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
-                  <div class="txt-content">
+                  <div className="txt-content">
                     <h4>Inspiration</h4>
                     <h3>
                       Nullam ante neque, gravida id lacus et, gravida ultricies
@@ -190,17 +191,17 @@ const LandingPage = () => {
                   </div>
                 </a>
               </div>
-              <div class="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" class="news-group-item">
-                  <div class="img-holder">
-                    <div class="hover-content">
-                      <div class="link-holder">
-                        <div class="link-btn hover-underline">
+              <div className="col-6 grid-item wow fadeIn">
+                <a href="news-full.php" className="news-group-item">
+                  <div className="img-holder">
+                    <div className="hover-content">
+                      <div className="link-holder">
+                        <div className="link-btn hover-underline">
                           <span>Read article</span>
                           <img
                             src="images/explore-arrow-main-color-icon.png"
                             alt="Kax diary"
-                            class="img-fluid"
+                            className="img-fluid"
                           />
                         </div>
                       </div>
@@ -208,28 +209,28 @@ const LandingPage = () => {
                     <img
                       src="images/index-blog-full-img-03.jpg"
                       alt=""
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
-                  <div class="txt-content">
+                  <div className="txt-content">
                     <h4>News</h4>
                     <h3>Sed eget iaculis nisi</h3>
                   </div>
                 </a>
               </div>
             </div>
-            <div class="row wow fadeIn">
-              <div class="col-12 mb-100">
+            <div className="row wow fadeIn">
+              <div className="col-12 mb-100">
                 <a
                   href="blog-group.php"
-                  class="link-holder justify-content-center"
+                  className="link-holder justify-content-center"
                 >
-                  <div class="link-btn hover-underline">
+                  <div className="link-btn hover-underline">
                     <span>Explore complete diary</span>
                     <img
                       src="images/explore-arrow-icon.png"
                       alt="Explore complete diary"
-                      class="img-fluid"
+                      className="img-fluid"
                     />
                   </div>
                 </a>
@@ -239,14 +240,7 @@ const LandingPage = () => {
         </section>
       </main>
 
-      <div class="scroll-down-container">
-        <span>Scroll down</span>
-        <img
-          src="images/scroll-down-icon.png"
-          alt="Scroll down"
-          class="img-fluid"
-        />
-      </div>
+      <ScrollDown />
     </>
   );
 };
