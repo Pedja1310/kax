@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <nav className={`navbar ${!isOpen ? "" : "opened-menu"}`}>
+    <nav className={`navbar ${isOpen ? "opened-menu" : ""}`}>
       <Link
         className="navbar-brand logo-holder wow fadeInDown"
         data-wow-delay=".5s"
@@ -24,7 +24,7 @@ const Header = () => {
           className="img-fluid"
         />
       </button>
-      <div className={`navbar-collapse ${!isOpen ? "collapse" : ""}`}>
+      <div className={`navbar-collapse collapse ${isOpen ? "open" : ""}`}>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item wow fadeInDown" data-wow-delay=".5s">
             <Link
@@ -40,7 +40,9 @@ const Header = () => {
             <Link
               className="nav-link transition-page hover-underline"
               to="/about-us"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+              }}
             >
               KAX World
             </Link>

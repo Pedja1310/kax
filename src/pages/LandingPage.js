@@ -5,7 +5,7 @@ import ScrollDown from "../components/ScrollDown";
 const LandingPage = () => {
   return (
     <>
-      <main className="pr-90 index-page">
+      <nav className="pr-90">
         <section
           className="main-content-section wow fadeIn"
           data-wow-delay="1.5s"
@@ -133,7 +133,7 @@ const LandingPage = () => {
           <div className="container news-group-container">
             <div className="row news-group-content grid mb-50">
               <div className="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" className="news-group-item">
+                <Link to="/news-full" className="news-group-item">
                   <div className="img-holder">
                     <div className="hover-content">
                       <div className="link-holder">
@@ -159,10 +159,10 @@ const LandingPage = () => {
                       Islas Secas: <br />A Transcendent Destination
                     </h3>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" className="news-group-item">
+                <Link href="/news-full" className="news-group-item">
                   <div className="img-holder">
                     <div className="hover-content">
                       <div className="link-holder">
@@ -189,10 +189,10 @@ const LandingPage = () => {
                       neque
                     </h3>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="col-6 grid-item wow fadeIn">
-                <a href="news-full.php" className="news-group-item">
+                <Link href="/news-full.php" className="news-group-item">
                   <div className="img-holder">
                     <div className="hover-content">
                       <div className="link-holder">
@@ -216,13 +216,13 @@ const LandingPage = () => {
                     <h4>News</h4>
                     <h3>Sed eget iaculis nisi</h3>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="row wow fadeIn">
               <div className="col-12 mb-100">
-                <a
-                  href="blog-group.php"
+                <Link
+                  href="/blog-group"
                   className="link-holder justify-content-center"
                 >
                   <div className="link-btn hover-underline">
@@ -233,12 +233,12 @@ const LandingPage = () => {
                       className="img-fluid"
                     />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </section>
-      </main>
+      </nav>
 
       <ScrollDown />
     </>

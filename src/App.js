@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import $ from "jquery";
 import WOW from "wowjs";
@@ -19,10 +19,19 @@ import DefaultPage from "./pages/DefaultPage";
 import ContactPage from "./pages/ContactPage";
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     $(document).ready(function () {
       // on load add class
-      $("body").addClass("loaded");
+      if (!$("body").hasClass("loaded")) {
+        $("body").addClass("loaded");
+      } else {
+        $("body").removeClass("loaded");
+        setTimeout(() => {
+          $("body").addClass("loaded");
+        }, 1200);
+      }
 
       // wow
       if ($(window).width() <= 768) {
@@ -39,10 +48,10 @@ function App() {
 
       window.wow.init();
     });
-  }, []);
+  }, [location]);
 
   return (
-    <div className="">
+    <main className="pr-90">
       <Header />
 
       <Routes>
@@ -61,7 +70,7 @@ function App() {
       <CookiesPrompt />
 
       <Footer />
-    </div>
+    </main>
   );
 }
 

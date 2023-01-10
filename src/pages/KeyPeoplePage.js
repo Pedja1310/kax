@@ -5,7 +5,7 @@ import ScrollDown from "../components/ScrollDown";
 const KeyPeoplePage = () => {
   return (
     <>
-      <main className="pr-90 key-people-page">
+      <main className="pr-90">
         <section className="page-submenu-section">
           <div className="container page-submenu-container">
             <div className="row page-submenu-content">
