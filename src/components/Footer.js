@@ -103,11 +103,7 @@ const Footer = () => {
               <ul className="col-3">
                 <li>
                   <h3>
-                    <Link
-                      Link
-                      className="hover-underline"
-                      to="/start-a-journey"
-                    >
+                    <Link className="hover-underline" to="/start-a-journey">
                       Start A Journey
                     </Link>
                   </h3>

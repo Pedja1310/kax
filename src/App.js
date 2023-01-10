@@ -30,7 +30,7 @@ function App() {
         $("body").removeClass("loaded");
         setTimeout(() => {
           $("body").addClass("loaded");
-        }, 1200);
+        }, 550);
       }
 
       // wow

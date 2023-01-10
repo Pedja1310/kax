@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import $ from "jquery";
-import { Link } from "react-router-dom";
 
 const CookiesPropmt = () => {
   const [cookieClosedClass, setCookieClosedClass] = useState("");
@@ -15,12 +15,14 @@ const CookiesPropmt = () => {
     }
   }, []);
 
-  const acceptAndCloseCookiesPrompt = () => {
+  const acceptAndCloseCookiesPrompt = (event) => {
+    event.stopPropagation();
     setCookie("popupCookie", "closed", 1);
     setCookieClosedClass("hide");
   };
 
-  const closeCookiesPrompt = () => {
+  const closeCookiesPrompt = (event) => {
+    event.stopPropagation();
     setCookieClosedClass("hide");
   };
 
@@ -49,13 +51,12 @@ const CookiesPropmt = () => {
   return (
     <div id="cookie-msg-container" className={cookieClosedClass}>
       <div className="txt-holder">
-        <Link
-          to="#"
+        <button
           className={`close-cookie ${cookieClosedClass}`}
           onClick={closeCookiesPrompt}
         >
           X
-        </Link>
+        </button>
         <div className="cookie-desc">
           <div className="heading-holder">
             <h3 className="txt-underline">Cookies Settings</h3>
@@ -64,8 +65,7 @@ const CookiesPropmt = () => {
             We use cookies to personalize your experience. Plase accept cookies
             for optimal performance.
           </p>
-          <Link
-            href="to"
+          <button
             className="link-holder accespt-btn"
             onClick={acceptAndCloseCookiesPrompt}
           >
@@ -75,10 +75,10 @@ const CookiesPropmt = () => {
               alt="Kax Life style"
               className="img-fluid"
             />
-          </Link>
-          <Link to="#" className="link-holder change-settings-btn">
+          </button>
+          <button className="link-holder change-settings-btn">
             <span>Change Settings</span>
-          </Link>
+          </button>
         </div>
       </div>
       <div className="img-holder cookies-img">
