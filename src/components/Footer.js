@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleEmailInput = (e) => {
+    setEmail(e.target.value);
+  };
+
+  // will console.log email(no backend service)
+  const handleNewsletterSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(email);
+  };
+
   return (
     <footer className="footer-section">
       <div className="container-fluid footer-container wow fadeIn">
@@ -44,8 +57,7 @@ const Footer = () => {
               </p>
               <div className="newsletter-holder">
                 <form
-                  action="javascript;;"
-                  method="post"
+                  onSubmit={handleNewsletterSubmit}
                   className="newsletter-form"
                   id="newsletter_form"
                 >
@@ -54,6 +66,7 @@ const Footer = () => {
                     className="custom-input"
                     name="email"
                     placeholder="Enter email address"
+                    onChange={handleEmailInput}
                   />
                   <button className="btn hover-underline" type="submit">
                     Join

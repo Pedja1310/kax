@@ -45,7 +45,7 @@ const LandingPage = () => {
             <div className="row txt-img-content">
               <div className="col-12 txt-content">
                 <div className="img-holder order-md-2">
-                  <div className="img-placeholder-container ">
+                  <div className="img-placeholder-container wow">
                     <div className="full-bg main-bg"></div>
                     <img
                       src="images/index-kax-life-style-img.jpg"

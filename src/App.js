@@ -43,7 +43,7 @@ function App() {
         animateClass: "animated",
         offset: 100,
         mobile: false,
-        live: true,
+        live: false,
       });
 
       window.wow.init();
