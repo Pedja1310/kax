@@ -128,7 +128,7 @@ const NewsGroupPage = () => {
                   </Link>
                 </div>
                 <div className="col-6 grid-item wow fadeIn">
-                  <Link Link="/news-full" className="news-group-item">
+                  <Link to="/news-full" className="news-group-item">
                     <div className="img-holder">
                       <div className="hover-content">
                         <div className="link-holder">
