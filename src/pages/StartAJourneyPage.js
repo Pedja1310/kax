@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CustomInput from "../components/CustomInput";
 import ScrollDown from "../components/ScrollDown";
 
 const StartAJourneyPage = () => {
@@ -6,10 +7,9 @@ const StartAJourneyPage = () => {
     fullname: "",
     email: "",
     phone: "",
-    phone_2: "",
     travel_start: "",
     travel_end: "",
-    passangers: "",
+    passengers: "",
     destination: "",
     message: "",
   });
@@ -54,54 +54,30 @@ const StartAJourneyPage = () => {
                   onSubmit={handleSubmit}
                   className="contact-form start-a-journey-form"
                 >
-                  <div className="form-group">
-                    <label>What's your name?</label>
-                    <input
-                      value={formData.fullname}
-                      type="text"
-                      name="fullname"
-                      className="custom-input"
-                      placeholder="John Doe *"
-                      onChange={handleChange}
-                    />
-                    <span id="fullname_error" className="field_error"></span>
-                  </div>
-                  <div className="form-group">
-                    <label>Email address</label>
-                    <input
-                      value={formData.email}
-                      type="text"
-                      name="email"
-                      className="custom-input"
-                      placeholder="john@doe.com *"
-                      onChange={handleChange}
-                    />
-                    <span id="email_error" className="field_error"></span>
-                  </div>
-                  <div className="form-group">
-                    <label>Phone number</label>
-                    <input
-                      value={formData.phone}
-                      type="text"
-                      name="phone"
-                      className="custom-input"
-                      placeholder="+1 (123) 456 7890*"
-                      onChange={handleChange}
-                    />
-                    <span id="email_error" className="field_error"></span>
-                  </div>
-                  <div className="form-group">
-                    <label>Phone number</label>
-                    <input
-                      value={formData.phone_2}
-                      type="text"
-                      name="phone_2"
-                      className="custom-input"
-                      placeholder="+1 (123) 456 7890*"
-                      onChange={handleChange}
-                    />
-                    <span id="email_error" className="field_error"></span>
-                  </div>
+                  <CustomInput
+                    formData={formData}
+                    type="text"
+                    name="fullname"
+                    placeholder={"John Doe *"}
+                    handleChange={handleChange}
+                    label={"What's your name?"}
+                  />
+                  <CustomInput
+                    formData={formData}
+                    type="email"
+                    name="email"
+                    placeholder={"john@doe.com"}
+                    handleChange={handleChange}
+                    label="Email address"
+                  />
+                  <CustomInput
+                    formData={formData}
+                    type="text"
+                    name="phone"
+                    placeholder={"+1 (123) 456 789"}
+                    label="Phone number"
+                    handleChange={handleChange}
+                  />
                   <div className="form-group">
                     <label className="mb-50 d-block">Date of travel</label>
                     <div className="row">
@@ -143,42 +119,30 @@ const StartAJourneyPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="form-group">
-                    <label>Number of passengers</label>
-                    <input
-                      value={formData.passangers}
-                      type="text"
-                      name="passangers"
-                      className="custom-input"
-                      placeholder="How many people?"
-                      onChange={handleChange}
-                    />
-                    <span id="email_error" className="field_error"></span>
-                  </div>
-                  <div className="form-group">
-                    <label>Destination</label>
-                    <input
-                      value={formData.destiantion}
-                      type="text"
-                      name="destination"
-                      className="custom-input"
-                      placeholder="Place, country, continent"
-                      onChange={handleChange}
-                    />
-                    <span id="email_error" className="field_error"></span>
-                  </div>
-                  <div className="form-group">
-                    <label>Message:</label>
-                    <textarea
-                      value={formData.message}
-                      name="message"
-                      className="custom-textarea"
-                      rows="6"
-                      placeholder="More explanation"
-                      onChange={handleChange}
-                    ></textarea>
-                    <span id="message_error" className="field_error"></span>
-                  </div>
+                  <CustomInput
+                    formData={formData}
+                    type="text"
+                    name="passengers"
+                    placeholder={"How many people?"}
+                    label="Number of passengers"
+                    handleChange={handleChange}
+                  />
+                  <CustomInput
+                    formData={formData}
+                    type="text"
+                    name="destination"
+                    placeholder="Place, country, continent"
+                    label="Destianation"
+                    handleChange={handleChange}
+                  />
+                  <CustomInput
+                    formData={formData}
+                    type="textarea"
+                    name="message"
+                    placeholder="More explanation"
+                    handleChange={handleChange}
+                    label="Message:"
+                  />
                   <div className="form-group no-border">
                     <button type="submit" className="">
                       Send It{" "}

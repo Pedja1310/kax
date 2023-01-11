@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import CustomInput from "../components/CustomInput";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -73,42 +74,30 @@ const ContactPage = () => {
                 <h3 className="txt-underline">Send us Link direct message</h3>
               </div>
               <form className="contact-form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label>What's your name?</label>
-                  <input
-                    value={formData.name}
-                    type="text"
-                    name="fullname"
-                    className="custom-input"
-                    placeholder="John Doe *"
-                    onChange={handleChange}
-                  />
-                  <span id="fullname_error" className="field_error"></span>
-                </div>
-                <div className="form-group">
-                  <label>Email address</label>
-                  <input
-                    value={formData.email}
-                    type="text"
-                    name="email"
-                    className="custom-input"
-                    placeholder="john@doe.com *"
-                    onChange={handleChange}
-                  />
-                  <span id="email_error" className="field_error"></span>
-                </div>
-                <div className="form-group">
-                  <label>Message:</label>
-                  <textarea
-                    value={formData.message}
-                    name="message"
-                    className="custom-textarea"
-                    rows="6"
-                    placeholder="More explanation"
-                    onChange={handleChange}
-                  ></textarea>
-                  <span id="message_error" className="field_error"></span>
-                </div>
+                <CustomInput
+                  formData={formData}
+                  type="text"
+                  name="fullname"
+                  placeholder="John Doe *"
+                  label="What's your name"
+                  handleChange={handleChange}
+                />
+                <CustomInput
+                  formData={formData}
+                  type="email"
+                  name="email"
+                  placeholder="john@doe.com"
+                  label="Email address"
+                  handleChange={handleChange}
+                />
+                <CustomInput
+                  formData={formData}
+                  type="textarea"
+                  name="message"
+                  placeholder="More explenation"
+                  handleChange={handleChange}
+                  label="Message:"
+                />
                 <div className="form-group no-border">
                   <button type="submit" className="">
                     Send It{" "}
